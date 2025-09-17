@@ -8,7 +8,6 @@
     this.setAttribute('aria-expanded', String(!expanded));
     menu.classList.toggle('open', !expanded);
   });
-  // Close menu when a link is clicked
   menu.addEventListener('click', function(e){
     if(e.target.matches('a')){
       btn.setAttribute('aria-expanded', 'false');
