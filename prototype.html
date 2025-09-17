@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BonusBud – Application Info</title>
+  <title>BonusBud – Prototype</title>
   <meta name="description" content="BonusBud: track, complete, and optimize bank signup bonuses." />
   <link rel="preload" as="image" href="assets/bonusbud-logo.png">
   <link rel="stylesheet" href="styles.css" />
@@ -14,7 +14,14 @@
     <img src="assets/bonusbud-logo.png" alt="BonusBud logo" width="150" height="150">
     <span>BonusBud</span>
   </a>
-  <nav class="nav">
+
+  <button class="nav-toggle" data-nav-toggle aria-controls="site-menu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <nav id="site-menu" class="nav" role="navigation">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="prototype.html">App Info</a>
@@ -23,22 +30,12 @@
   </nav>
 </header>
 <main class="container">
-
-<section>
-  <h1>Application Prototype Information</h1>
-  <p><strong>What is BonusBud?</strong> A web and mobile concept to track and complete bank signup bonuses without requiring bank logins.</p>
-  <div class="grid">
-    <div class="card"><h3>Tech Used</h3><p>HTML, CSS, vanilla JS. Hosted on GitHub Pages.</p></div>
-    <div class="card"><h3>Core Modules</h3><p>Offer catalog, requirement checklist, alerts, analytics</p></div>
-    <div class="card"><h3>Data Model</h3><p>User → Offers → Tasks (DD, swipes, balance) with due dates and status.</p></div>
-  </div>
-  <p class="note">This is a non-commercial coursework prototype illustrating PO/CO outcomes: system setup, app tooling, and web deployment.</p>
-</section>
-
+<section><h1>Coming soon</h1><p>Content placeholder.</p></section>
 </main>
 <footer class="site-footer">
   <img src="assets/bonusbud-logo.png" alt="BonusBud footer logo" width="60" height="60" class="footer-logo">
   <p>© 2025 BonusBud · Coursework prototype</p>
 </footer>
+<script src="app.js"></script>
 </body>
 </html>

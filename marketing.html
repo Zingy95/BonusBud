@@ -14,7 +14,14 @@
     <img src="assets/bonusbud-logo.png" alt="BonusBud logo" width="150" height="150">
     <span>BonusBud</span>
   </a>
-  <nav class="nav">
+
+  <button class="nav-toggle" data-nav-toggle aria-controls="site-menu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <nav id="site-menu" class="nav" role="navigation">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="prototype.html">App Info</a>
@@ -23,29 +30,66 @@
   </nav>
 </header>
 <main class="container">
-
-<section class="hero small">
-  <h1>Why Choose BonusBud?</h1>
-  <p>Maximize earnings, save time, and stay organized stress free.</p>
+<section class="hero small hero-contrast">
+  <h1>BonusBud value for busy people</h1>
+  <p>Reduce friction, increase follow through, and capture more rewards with less effort.</p>
 </section>
 
 <section class="grid">
-  <div class="card"><h3>Maximize Earnings</h3><p>Never miss a qualified payout again.</p></div>
-  <div class="card"><h3>Save Time</h3><p>Automatic reminders and clear tasks.</p></div>
-  <div class="card"><h3>Stay Organized</h3><p>All offers, rules, and deadlines in one place.</p></div>
-  <div class="card"><h3>Peace of Mind</h3><p>Secure tracking. No bank credentials required.</p></div>
+  <div class="card">
+    <h3>Save time</h3>
+    <p>Structured tasks keep you focused on what matters today.</p>
+  </div>
+  <div class="card">
+    <h3>Avoid mistakes</h3>
+    <p>Requirements are visible and easy to check off correctly.</p>
+  </div>
+  <div class="card">
+    <h3>Stay compliant</h3>
+    <p>Eligibility notes and caution flags reduce accidental disqualification.</p>
+  </div>
+  <div class="card">
+    <h3>See results</h3>
+    <p>Totals and trends make progress visible and motivating.</p>
+  </div>
+</section>
+
+<section class="how-it-works">
+  <h2>How it works</h2>
+  <ol class="steps big">
+    <li><strong>Add an offer</strong> with its rules and due dates.</li>
+    <li><strong>Check off tasks</strong> as you complete deposits or swipes.</li>
+    <li><strong>Review status</strong> and confirm payout windows.</li>
+  </ol>
+</section>
+
+<section class="social-proof">
+  <blockquote>
+    “I stopped missing payouts once I could see everything in one list.”
+  </blockquote>
+  <p class="muted">Early tester comment</p>
+</section>
+
+<section class="sources">
+  <h2>Stats and sources</h2>
+  <p class="muted">Use reputable outlets when citing market figures or user earnings. Examples include:</p>
+  <ul>
+    <li><a href="https://www.bankrate.com" target="_blank" rel="noopener">Bankrate</a></li>
+    <li><a href="https://www.nerdwallet.com" target="_blank" rel="noopener">NerdWallet</a></li>
+    <li><a href="https://www.consumerfinance.gov" target="_blank" rel="noopener">Consumer Financial Protection Bureau</a></li>
+  </ul>
 </section>
 
 <section class="cta-banner">
-  <h2>Ready to start?</h2>
-  <p>Jump to the guide and see how tracking works.</p>
+  <h2>Take the next step</h2>
+  <p>Open the user guide, then add your first offer.</p>
   <a class="btn btn-primary" href="user-guide.html">Open the User Guide</a>
 </section>
-
 </main>
 <footer class="site-footer">
   <img src="assets/bonusbud-logo.png" alt="BonusBud footer logo" width="60" height="60" class="footer-logo">
   <p>© 2025 BonusBud · Coursework prototype</p>
 </footer>
+<script src="app.js"></script>
 </body>
 </html>

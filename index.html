@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BonusBud – Home</title>
+  <title>BonusBud – Index</title>
   <meta name="description" content="BonusBud: track, complete, and optimize bank signup bonuses." />
   <link rel="preload" as="image" href="assets/bonusbud-logo.png">
   <link rel="stylesheet" href="styles.css" />
@@ -14,7 +14,14 @@
     <img src="assets/bonusbud-logo.png" alt="BonusBud logo" width="150" height="150">
     <span>BonusBud</span>
   </a>
-  <nav class="nav">
+
+  <button class="nav-toggle" data-nav-toggle aria-controls="site-menu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <nav id="site-menu" class="nav" role="navigation">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="prototype.html">App Info</a>
@@ -23,27 +30,46 @@
   </nav>
 </header>
 <main class="container">
-
-<section class="hero">
-  <h1>Track. Earn. Repeat.</h1>
-  <p>BonusBud helps you stay on top of bank signup bonuses with clear checklists, deadline alerts, and simple analytics.</p>
-  <div class="cta-row">
-    <a class="btn btn-primary" href="user-guide.html">Read the User Guide</a>
-    <a class="btn btn-ghost" href="prototype.html">See the App Info</a>
+<section class="hero hero-contrast">
+  <div class="hero-text">
+    <h1>Track bonuses with clarity</h1>
+    <p>Turn bank signup requirements into a simple checklist with alerts and clear deadlines so you never miss a payout.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="user-guide.html" aria-label="Read the user guide">Read the User Guide</a>
+      <a class="btn btn-ghost" href="prototype.html" aria-label="See the app info">See the App Info</a>
+    </div>
   </div>
 </section>
 
 <section class="grid">
-  <div class="card"><h3>Bonus Tracker</h3><p>Centralize all offers. See status at a glance.</p></div>
-  <div class="card"><h3>Requirements Checklist</h3><p>Mark off deposits, swipes, and balance rules.</p></div>
-  <div class="card"><h3>Deadline Alerts</h3><p>Stay on schedule and avoid missed payouts.</p></div>
-  <div class="card"><h3>Analytics</h3><p>View total earned and upcoming opportunities.</p></div>
+  <div class="card">
+    <h3>Clear checklist</h3>
+    <p>Track deposits, card swipes, and balance requirements step by step.</p>
+  </div>
+  <div class="card">
+    <h3>Smart reminders</h3>
+    <p>Deadlines and milestones are highlighted before they become problems.</p>
+  </div>
+  <div class="card">
+    <h3>Organized library</h3>
+    <p>Keep all offers in one place with rules and eligibility notes.</p>
+  </div>
+  <div class="card">
+    <h3>Simple analytics</h3>
+    <p>See totals earned and upcoming earnings at a glance.</p>
+  </div>
 </section>
 
+<section class="cta-banner">
+  <h2>Ready to try the workflow?</h2>
+  <p>Open the quick guide and follow the first three steps.</p>
+  <a class="btn btn-primary" href="user-guide.html">Start with the User Guide</a>
+</section>
 </main>
 <footer class="site-footer">
   <img src="assets/bonusbud-logo.png" alt="BonusBud footer logo" width="60" height="60" class="footer-logo">
   <p>© 2025 BonusBud · Coursework prototype</p>
 </footer>
+<script src="app.js"></script>
 </body>
 </html>
