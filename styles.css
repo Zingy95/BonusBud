@@ -1,0 +1,58 @@
+
+:root{
+  --green:#16a34a;
+  --green-700:#15803d;
+  --bg:#0b0f0d;
+  --panel:#0f1412;
+  --text:#e7f2eb;
+  --muted:#b9c9c0;
+  --ring: rgba(22,163,74,.35);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--text);text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:32px 20px}
+
+.site-header{position:sticky;top:0;z-index:10;backdrop-filter:saturate(1.2) blur(8px);
+  background:linear-gradient(180deg, rgba(11,15,13,.9), rgba(11,15,13,.6) 60%, transparent);
+  border-bottom:1px solid rgba(255,255,255,.06)}
+.brand{display:flex;gap:18px;align-items:center;font-weight:700;font-size:1.8rem}
+.brand img{flex-shrink:0}
+.brand span{letter-spacing:.4px}
+.nav{display:flex;gap:18px;margin-left:auto}
+.site-header{display:flex;align-items:center;padding:14px 18px}
+.nav a{padding:12px 14px;border-radius:12px}
+.nav a:hover{background:rgba(255,255,255,.06)}
+
+.hero{display:flex;flex-direction:column;gap:10px;padding:40px;border:1px solid rgba(255,255,255,.06);
+  background: radial-gradient(1200px 400px at 20% -10%, rgba(22,163,74,.12), transparent 60%),
+              linear-gradient(0deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+  border-radius:24px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.hero h1{font-size:2.6rem;line-height:1.2;margin:0}
+.hero.small{padding:28px}
+
+.cta-row{display:flex;gap:12px;margin-top:6px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 18px;border-radius:14px;border:1px solid rgba(255,255,255,.08);
+  transition:transform .08s ease, box-shadow .2s ease}
+.btn:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(0,0,0,.35)}
+.btn-primary{background:var(--green);color:#071a0f;border-color:var(--green-700);font-weight:700}
+.btn-ghost{background:transparent}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:24px}
+.card{background:var(--panel);border:1px solid rgba(255,255,255,.06);padding:18px;border-radius:18px}
+.card h3{margin-top:0}
+
+.two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+@media (max-width: 900px){.two-col{grid-template-columns:1fr}}
+
+.note{color:var(--muted);border-left:3px solid var(--green);padding-left:10px;margin-top:16px}
+.bullet{margin:8px 0 0 0}
+
+.steps{padding-left:20px}
+.tip{margin-top:10px;color:var(--muted)}
+
+.cta-banner{margin-top:26px;padding:28px;background:linear-gradient(90deg, rgba(22,163,74,.18), transparent);
+  border:1px solid rgba(255,255,255,.08);border-radius:18px}
+
+.site-footer{padding:24px 16px;border-top:1px solid rgba(255,255,255,.06);color:var(--muted);text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px}
+.footer-logo{display:block;margin-bottom:8px}
